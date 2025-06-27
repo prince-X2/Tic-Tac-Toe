@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header">
+    <h1>Tic Tac Toe</h1>
+    <p>Welcome to the PVP mode</p>
+    <p>Click on a cell to place your mark.</p>  
+    <p>Enjoy the game!</p>
+   </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>  
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div class="strike-line" id="strike-line"></div>
+        </div>
+        <div class="scoreboard" id="scoreboard">
+            <h2>Scoreboard</h2>
+            <div class="score-row">
+                <span class="player-x">X</span>
+                <span id="score-x">0</span>
+                <span class="divider">:</span>
+                <span id="score-o">0</span>
+                <span class="player-o">O</span>
+            </div>
+            <div class="draw-row">
+                <span>Draws:</span>
+                <span id="score-draw">0</span>
+            </div>
+        </div>
+        </div>
+        <div id="game-btn">
+            <button id="reset">Reset</button>
+            <a href="mainpage.html"><button id="mainmenu">Main Menu</button></a>
+        </div>
+        <footer>
+            <p>Created by<a href="https://prince-portfolioo.netlify.app/">Prince</a></p>
+        </footer>
+    </div>
+    <script src="pvp.js"></script>
+</body>
+</html>
